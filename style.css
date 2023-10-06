@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+    --branco-pricipal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --background: #00030C;
+    --fonte-principal: 'Inter', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--background);
+    color: var(--branco-pricipal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}.container__caixa{
+    margin: 5em 0 0 4em;
+}
+.principal{
+   background-image:url("assets/Background.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   align-items: center;
+   text-align: center;
+}
+.container__titulo{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.container__botao_principal{
+    text-decoration: none;
+    background-color: var(--botao-azul); 
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--branco-pricipal);
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 1em;
+}
+.container__botao_secundario{
+    text-decoration: none;
+    border: 1px solid var(--branco-pricipal);
+    border-radius: 8px;
+    color: var(--branco-pricipal);
+    padding: 1em;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 1em;
+}
+.container__aviso{
+    font-size: 0.75rem;
+    color: var(--cinza-secundario);
+}
+.secundario__imagem{
+    width: 80%;
+}
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-pricipal);
+    margin-bottom: 0.1em;
+}
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao{
+    padding: 2em;
+}
+.dispositivos{
+    text-align: center;
+}
+.dispositivos_lista{
+    display: flex;
+    justify-content: space-around;
+}
+.dispositivos_item{
+    text-align: center;
+}
+.dispositivos_titulo{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.dispositivos_sub{
+    font-size: 32px;
+    font-weight: 700;
+}
